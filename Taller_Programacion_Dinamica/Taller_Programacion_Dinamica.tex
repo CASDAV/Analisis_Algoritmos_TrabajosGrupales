@@ -107,6 +107,42 @@ En este documento se presenta el análisis de los dos problemas planteados y sus
 
 	\subsection*{Pseudocódigo}
 	
+	\begin{algorithm}[H]
+	\begin{algorithmic}[1]
+	
+	\Procedure{Memorizado}{$X,Y,Z,M,N,C$}
+	
+	\If{$C[M][N] != ""$}
+		\State\Return $C[M][N]$
+	\EndIf
+	
+	\If{$longitud(z) == 0$}
+		\State $sePudo = True$
+		\State\Return $C[M][N]$
+	\EndIf
+	
+	\If{$longitud(X) > 0 \vee longitud(Y) > 0$}
+		\If{$longitud(X) > 0$}
+			\If{$X[0] == Z[0] \wedge sePudo == False$}
+				\State $C[M][N] = str(Memorizado(X[1:],Y,Z[1:],M-1,N,C))+X[0]$
+			\EndIf
+		\EndIf
+		
+		\If{$longitud(Y) > 0 $}
+			\If{$Y[0] == Z[0] \vee sePudo == False$}
+				\State $C[M][N] = str(Memorizado(X,Y[1:],Z[1:],M,N-1,C))+Y[0]$
+			\EndIf
+		\EndIf
+	\EndIf
+	
+	\State\Return $C[M][N]$	
+	
+	\EndProcedure
+	
+	\end{algorithmic}
+	\caption{\foreignlanguage{english}{Memorizado}}
+	\end{algorithm}
+	
 	\subsection*{Complejidad}
 	
 	\subsection*{Invariante}
