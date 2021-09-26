@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  26 SEP 2021 16:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  26 SEP 2021 16:43
 entering extended mode
 **./Taller_Programacion_Dinamica.tex
 (Taller_Programacion_Dinamica.tex
@@ -156,14 +156,34 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 Package: ulem 2019/11/18
 \ULdepth=\dimen151
 )
-\@float@every@algorithm=\toks33
-\c@algorithm=\count273
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/12/05 v1.2c Enhanced LaTeX Graphics (DPC,SPQR)
 
-(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/beamer\xmpmulti.sty
 (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
-\KV@toks@=\toks34
+\KV@toks@=\toks33
 )
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2021/03/04 v1.4d Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.c
+fg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen152
+\Gin@req@width=\dimen153
+)
+\@float@every@algorithm=\toks34
+\c@algorithm=\count273
+ (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/beamer\xmpmulti.sty
 \@mpm@count=\count274
 )
 (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algorithm.st
@@ -214,42 +234,67 @@ LaTeX Info: Redefining \% on input line 12.
 )
 \openout1 = `Taller_Programacion_Dinamica.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
-LaTeX Font Info:    ... okay on input line 34.
-LaTeX Info: Redefining \. on input line 34.
-LaTeX Info: Redefining \% on input line 34.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 40.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 36.
+LaTeX Font Info:    ... okay on input line 36.
+LaTeX Info: Redefining \. on input line 36.
+LaTeX Info: Redefining \% on input line 36.
 
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mk
+ii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count283
+\scratchdimen=\dimen154
+\scratchbox=\box58
+\nofMPsegments=\count284
+\nofMParguments=\count285
+\everyMPshowfont=\toks35
+\MPscratchCnt=\count286
+\MPscratchDim=\dimen155
+\MPnumerator=\count287
+\makeMPintoPDFobject=\count288
+\everyMPtoPDFconversion=\toks36
+)
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-b
+ase.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
 
-(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
+(C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.c
+fg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+LaTeX Font Info:    Trying to load font information for U+msa on input line 42.
+
+ (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 40.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 42.
 
 
 (C:\Users\julia\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
-LaTeX Info: Redefining \. on input line 40.
-LaTeX Info: Redefining \% on input line 40.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
+LaTeX Info: Redefining \. on input line 42.
+LaTeX Info: Redefining \% on input line 42.
 
 [1
 
@@ -258,7 +303,25 @@ LaTeX Info: Redefining \% on input line 40.
 -english.tex
 Package babel Info: Importing basic data for english
 (babel)             from babel-en.ini. Reported on input line 11.
-) [2] [3] [4] [5] [6] (Taller_Programacion_Dinamica.aux
+) [2] [3] [4] [5]
+<img//Algoritmo 1.png, id=30, 402.50375pt x 152.57pt>
+File: img//Algoritmo 1.png Graphic file (type png)
+<use img//Algoritmo 1.png>
+Package pdftex.def Info: img//Algoritmo 1.png  used on input line 275.
+(pdftex.def)             Requested size: 402.50276pt x 152.56963pt.
+
+Overfull \hbox (57.50276pt too wide) in paragraph at lines 275--277
+ [][] 
+ []
+
+[6]
+<img//Algoritmo 2.png, id=35, 336.25626pt x 190.7125pt>
+File: img//Algoritmo 2.png Graphic file (type png)
+<use img//Algoritmo 2.png>
+Package pdftex.def Info: img//Algoritmo 2.png  used on input line 282.
+(pdftex.def)             Requested size: 336.25543pt x 190.71202pt.
+ [7 <./img//Algoritmo 1.png> <./img//Algoritmo 2.png>]
+(Taller_Programacion_Dinamica.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
 LaTeX Info: Redefining \. on input line 9.
@@ -271,13 +334,13 @@ LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 ) ) 
 Here is how much of TeX's memory you used:
- 3954 strings out of 478864
- 60207 string characters out of 2848661
- 380447 words of memory out of 3000000
- 21850 multiletter control sequences out of 15000+600000
+ 4741 strings out of 478864
+ 71673 string characters out of 2848661
+ 392668 words of memory out of 3000000
+ 22602 multiletter control sequences out of 15000+600000
  412913 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,66p,575b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 57i,7n,66p,575b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/
@@ -293,9 +356,9 @@ mr7.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on Taller_Programacion_Dinamica.pdf (6 pages, 178541 bytes).
+Output written on Taller_Programacion_Dinamica.pdf (7 pages, 189321 bytes).
 PDF statistics:
- 86 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 11 words of extra memory for PDF output out of 10000 (max. 10000000)
 
