@@ -47,6 +47,10 @@ c = np.empty( (len(x)+1,len(y)+1), dtype = 'object' )
 c.fill("")
 
 cc = verificarM(x,y,z,m,n,c)
+if cc[::-1] == z:
+  print(True)
+else:
+  print(False)
 print(cc[::-1])
 
 print("--- %s seconds ---" % (time.time() - start_time))
