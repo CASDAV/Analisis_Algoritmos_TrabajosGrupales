@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  24 SEP 2021 21:27
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  26 SEP 2021 13:18
 entering extended mode
 **./Taller_Programacion_Dinamica.tex
 (Taller_Programacion_Dinamica.tex
@@ -272,12 +272,12 @@ LaTeX Info: Redefining \% on input line 12.
 ) ) 
 Here is how much of TeX's memory you used:
  3944 strings out of 478864
- 60055 string characters out of 2848661
- 381283 words of memory out of 3000000
+ 60085 string characters out of 2848661
+ 380555 words of memory out of 3000000
  21840 multiletter control sequences out of 15000+600000
  412913 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,7n,66p,277b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,7n,66p,345b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
 <C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm
 /cmbx10.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/am
 sfonts/cm/cmbx12.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/
@@ -291,7 +291,7 @@ rs/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb>
 <C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cm
 r9.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfont
 s/cm/cmsy10.pfb>
-Output written on Taller_Programacion_Dinamica.pdf (4 pages, 145801 bytes).
+Output written on Taller_Programacion_Dinamica.pdf (4 pages, 148579 bytes).
 PDF statistics:
  70 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
