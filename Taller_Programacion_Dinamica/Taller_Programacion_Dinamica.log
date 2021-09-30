@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  26 SEP 2021 16:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.6) (preloaded format=pdflatex 2021.8.9)  29 SEP 2021 20:40
 entering extended mode
 **./Taller_Programacion_Dinamica.tex
 (Taller_Programacion_Dinamica.tex
@@ -307,20 +307,19 @@ Package babel Info: Importing basic data for english
 <img//Algoritmo 1.png, id=30, 402.50375pt x 152.57pt>
 File: img//Algoritmo 1.png Graphic file (type png)
 <use img//Algoritmo 1.png>
-Package pdftex.def Info: img//Algoritmo 1.png  used on input line 275.
+Package pdftex.def Info: img//Algoritmo 1.png  used on input line 253.
 (pdftex.def)             Requested size: 402.50276pt x 152.56963pt.
 
-Overfull \hbox (57.50276pt too wide) in paragraph at lines 275--277
+Overfull \hbox (57.50276pt too wide) in paragraph at lines 253--255
  [][] 
  []
 
-[6]
-<img//Algoritmo 2.png, id=35, 336.25626pt x 190.7125pt>
+<img//Algoritmo 2.png, id=32, 336.25626pt x 190.7125pt>
 File: img//Algoritmo 2.png Graphic file (type png)
 <use img//Algoritmo 2.png>
-Package pdftex.def Info: img//Algoritmo 2.png  used on input line 282.
+Package pdftex.def Info: img//Algoritmo 2.png  used on input line 260.
 (pdftex.def)             Requested size: 336.25543pt x 190.71202pt.
- [7 <./img//Algoritmo 1.png> <./img//Algoritmo 2.png>]
+[6 <./img//Algoritmo 1.png>] [7 <./img//Algoritmo 2.png>]
 (Taller_Programacion_Dinamica.aux
 LaTeX Info: Redefining \. on input line 8.
 LaTeX Info: Redefining \% on input line 8.
@@ -336,7 +335,7 @@ LaTeX Info: Redefining \% on input line 12.
 Here is how much of TeX's memory you used:
  4741 strings out of 478864
  71673 string characters out of 2848661
- 392668 words of memory out of 3000000
+ 392644 words of memory out of 3000000
  22602 multiletter control sequences out of 15000+600000
  412913 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -356,7 +355,7 @@ mr7.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmr8.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1/public
 /amsfonts/cm/cmr9.pfb><C:/Users/julia/AppData/Local/Programs/MiKTeX/fonts/type1
 /public/amsfonts/cm/cmsy10.pfb>
-Output written on Taller_Programacion_Dinamica.pdf (7 pages, 189321 bytes).
+Output written on Taller_Programacion_Dinamica.pdf (7 pages, 188870 bytes).
 PDF statistics:
  96 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
