@@ -182,10 +182,11 @@ Q = []
 
 for b in histogram:
     Q.append(minimo)
+Q.append(minimo)
 a = 0
 for b in histogram:
     histogram[b][1] = float(histogram[b][0]) / float(len(tokens))
-    P.append(float(histogram[D[a]][0]) / (float(len(tokens)) + len(Q)))
+    P.append(float(histogram[D[a]][0]) / (float(len(tokens)) ))
     a += 1
 
 
@@ -197,9 +198,9 @@ for b in histogram:
 print(suma)
 
 
-# opt = opt_bin_tree(D, P, Q)
-# huf = build_huffman(D, P)
-
+#opt = opt_bin_tree(D, P, Q)
+huf = build_huffman(D, P)
+#print(huf)
 # 2. Comprimir el mensaje usando opt
 
 # 3. Comprimir el mensaje usando huf
