@@ -89,7 +89,8 @@ def opt_bin_tree_bt(D, P, B, i, j):
 # end def
 
 # -------------------------------------------------------------------------
-
+def bits2a(b):
+    return ''.join(chr(int(''.join(x), 2)) for x in zip(*[iter(b)]*8))
 
 def opt_bin_tree(D, P, Q):
     M = [[0 for j in range(len(Q) + 1)] for i in range(len(Q) + 1)]
@@ -157,7 +158,7 @@ def build_huffman(D, P):
 
 
 # -- Read file
-file_hnd = open('el_quijote.txt', 'r', encoding="UTF-8")
+file_hnd = open('el_quijote_3.txt', 'r', encoding="UTF-8")
 txt = file_hnd.read().replace('\n', ' ')
 file_hnd.close()
 
@@ -232,15 +233,7 @@ print(suma)
 
 #opt = opt_bin_tree(D, P, Q)
 huf = build_huffman(D, P)
-print(type(huf))
-# print(huf)
 
-print( BinTree.leaf_searh(huf, "y"))
-print( BinTree.leaf_searh(huf, "visto"))
-print( BinTree.leaf_searh(huf, "discretas"))
-print( BinTree.leaf_searh(huf, "razones"))
-print( BinTree.leaf_searh(huf, "sancho"))
-print( BinTree.leaf_searh(huf, "garamantas"))
 
 
 # print(float(len(tokens)))
@@ -249,5 +242,17 @@ print( BinTree.leaf_searh(huf, "garamantas"))
 # 2. Comprimir el mensaje usando opt
 
 # 3. Comprimir el mensaje usando huf
+
+# -- Read file
+
+file_hnd = open('el_quijote_bin.bin', 'wb')
+
+for token in tokens:
+    txt = file_hnd.write( bytes( bits2a( BinTree.leaf_searh(huf,token) ), encoding='utf8' ) )
+
+
+file_hnd.close()
+
+
 
 # 4. Comparar la calidad de comprension
