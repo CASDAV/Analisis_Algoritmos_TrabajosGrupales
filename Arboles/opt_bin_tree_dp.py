@@ -33,7 +33,32 @@ class BinTree:
     # end def
 
     def leaf_searh(self, v):
-        pass
+        codigo = ""
+        actual = str(self.m_D)
+
+        if actual == v or actual == None:
+            return ""
+
+        # mirar a la izquierda
+        if not self.m_L is None:
+            if BinTree.leaf_searh(self.m_L, v) != None:
+                codigo += "0" + BinTree.leaf_searh(self.m_L, v)
+                return codigo
+
+        # mirar a la derecha
+        if not self.m_R is None:
+            if BinTree.leaf_searh(self.m_R, v) != None:
+                codigo += "1" + BinTree.leaf_searh(self.m_R, v)
+                return codigo
+
+
+def search_recursively(key, node):
+    if node is None or key == node.key:
+        return node
+    if key < node.key:
+        return search_recursively(key, node.left)
+    return search_recursively(key, node.right)
+
     # end def
 
     def __str__(self):
@@ -164,7 +189,11 @@ for b in histogram:
 # end for
 D = sorted(histogram.keys())
 print(type(D))
+
+
 # 1. Convertir el histograma en P y Q
+
+
 suma = 0
 minimo = 1000000000
 cont = 0
@@ -183,10 +212,13 @@ Q = []
 for b in histogram:
     Q.append(minimo)
 Q.append(minimo)
+
 a = 0
 for b in histogram:
     histogram[b][1] = float(histogram[b][0]) / float(len(tokens))
-    P.append(float(histogram[D[a]][0]) / (float(len(tokens)) ))
+    P.append(float(histogram[D[a]][0]) / (float(len(tokens))))
+    if a == 0:
+        print(histogram[D[a]])
     a += 1
 
 
@@ -200,7 +232,20 @@ print(suma)
 
 #opt = opt_bin_tree(D, P, Q)
 huf = build_huffman(D, P)
-#print(huf)
+print(type(huf))
+# print(huf)
+
+print( BinTree.leaf_searh(huf, "y"))
+print( BinTree.leaf_searh(huf, "visto"))
+print( BinTree.leaf_searh(huf, "discretas"))
+print( BinTree.leaf_searh(huf, "razones"))
+print( BinTree.leaf_searh(huf, "sancho"))
+print( BinTree.leaf_searh(huf, "garamantas"))
+
+
+# print(float(len(tokens)))
+
+
 # 2. Comprimir el mensaje usando opt
 
 # 3. Comprimir el mensaje usando huf
