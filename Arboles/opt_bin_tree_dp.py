@@ -6,6 +6,7 @@ import pprint
 import unicodedata
 import re
 import sys
+import binascii
 
 # -------------------------------------------------------------------------
 
@@ -28,8 +29,33 @@ class BinTree:
             return self.m_F < other.m_F
     # end def
 
+    def binSearchInit(self, v):
+        actual = str(self.m_D)
+        if actual == v:
+            return "0"
+        else:
+            return self.bin_search(v)
+
     def bin_search(self, v):
-        pass
+        codigo = ""
+        actual = str(self.m_D)
+        #print("busco a " + v)
+
+        if actual == v or actual == None:
+            return ""
+
+        # mirar a la izquierda
+
+        if actual > v:
+            if not self.m_L is None:
+                if BinTree.bin_search(self.m_L, v) != None:
+                    codigo += "0" + BinTree.bin_search(self.m_L, v)
+                    return codigo
+        if not self.m_R is None:
+            if BinTree.bin_search(self.m_R, v) != None:
+                codigo += "1" + BinTree.bin_search(self.m_R, v)
+                return codigo
+
     # end def
 
     def leaf_searh(self, v):
@@ -61,14 +87,15 @@ def search_recursively(key, node):
 
     # end def
 
-    def __str__(self):
-        r = str(self.m_D) + ':' + str(self.m_F) + '\n'
-        if not self.m_L is None:
-            r += '--L--> ' + str(self.m_L) + '\n'
-        # end if
-        if not self.m_R is None:
-            r += '--R--> ' + str(self.m_R) + '\n'
-        # end if
+
+def __str__(self):
+    r = str(self.m_D) + ':' + str(self.m_F) + '\n'
+    if not self.m_L is None:
+        r += '--L--> ' + str(self.m_L) + '\n'
+    # end if
+    if not self.m_R is None:
+        r += '--R--> ' + str(self.m_R) + '\n'
+    # end if
         return r
     # end def
 
@@ -86,11 +113,15 @@ def opt_bin_tree_bt(D, P, B, i, j):
         root.m_L = opt_bin_tree_bt(D, P, B, i, r - 1)
         root.m_R = opt_bin_tree_bt(D, P, B, r + 1, j)
         return root
+
 # end def
 
 # -------------------------------------------------------------------------
+
+
 def bits2a(b):
     return ''.join(chr(int(''.join(x), 2)) for x in zip(*[iter(b)]*8))
+
 
 def opt_bin_tree(D, P, Q):
     M = [[0 for j in range(len(Q) + 1)] for i in range(len(Q) + 1)]
@@ -231,15 +262,19 @@ for b in histogram:
 print(suma)
 
 
-#opt = opt_bin_tree(D, P, Q)
+opt = opt_bin_tree(D, P, Q)
 huf = build_huffman(D, P)
 
-
-
-# print(float(len(tokens)))
-
-
 # 2. Comprimir el mensaje usando opt
+
+file_hnd = open('el_quijote_bin_OPT.bin', 'wb')
+
+
+for token in tokens:
+    #print(bytes(BinTree.binSearchInit(opt, token), encoding='utf8'))
+    #txt = file_hnd.write( bytes( BinTree.binSearchInit(opt, token), encoding='utf8'))
+    txt = file_hnd.write(  binascii.a2b_uu(BinTree.binSearchInit(opt, token)))
+file_hnd.close()
 
 # 3. Comprimir el mensaje usando huf
 
@@ -248,11 +283,9 @@ huf = build_huffman(D, P)
 file_hnd = open('el_quijote_bin.bin', 'wb')
 
 for token in tokens:
-    txt = file_hnd.write( bytes( bits2a( BinTree.leaf_searh(huf,token) ), encoding='utf8' ) )
-
-
+    txt = file_hnd.write(
+        bytes(bits2a(BinTree.leaf_searh(huf, token)), encoding='utf8'))
 file_hnd.close()
-
 
 
 # 4. Comparar la calidad de comprension
