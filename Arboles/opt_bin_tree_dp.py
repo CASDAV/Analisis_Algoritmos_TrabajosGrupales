@@ -272,8 +272,8 @@ file_hnd = open('el_quijote_bin_OPT.bin', 'wb')
 
 for token in tokens:
     #print(bytes(BinTree.binSearchInit(opt, token), encoding='utf8'))
-    #txt = file_hnd.write( bytes( BinTree.binSearchInit(opt, token), encoding='utf8'))
-    txt = file_hnd.write(  binascii.a2b_uu(BinTree.binSearchInit(opt, token)))
+    txt = file_hnd.write( bytes( BinTree.binSearchInit(opt, token), encoding='utf8'))
+    #txt = file_hnd.write(  binascii.a2b_uu(BinTree.binSearchInit(opt, token)))
 file_hnd.close()
 
 # 3. Comprimir el mensaje usando huf
@@ -283,8 +283,8 @@ file_hnd.close()
 file_hnd = open('el_quijote_bin.bin', 'wb')
 
 for token in tokens:
-    txt = file_hnd.write(
-        bytes(bits2a(BinTree.leaf_searh(huf, token)), encoding='utf8'))
+    #txt = file_hnd.write(bytes(bits2a(BinTree.leaf_searh(huf, token)), encoding='utf8'))
+    txt = file_hnd.write(bytes( BinTree.leaf_searh(huf, token), encoding='utf8'))
 file_hnd.close()
 
 
