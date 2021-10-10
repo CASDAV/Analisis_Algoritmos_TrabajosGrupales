@@ -250,7 +250,7 @@ for b in histogram:
     histogram[b][1] = float(histogram[b][0]) / float(len(tokens))
     P.append(float(histogram[D[a]][0]) / (float(len(tokens))))
     if a == 0:
-        print(histogram[D[a]])
+        print()
     a += 1
 
 
@@ -259,33 +259,54 @@ cont = 0
 for b in histogram:
     suma += P[cont]
     cont += 1
-print(suma)
+# print(suma)
 
-
-opt = opt_bin_tree(D, P, Q)
-huf = build_huffman(D, P)
-
-# 2. Comprimir el mensaje usando opt
-
-file_hnd = open('el_quijote_bin_OPT.bin', 'wb')
-
-
-for token in tokens:
-    #print(bytes(BinTree.binSearchInit(opt, token), encoding='utf8'))
-    txt = file_hnd.write( bytes( BinTree.binSearchInit(opt, token), encoding='utf8'))
-    #txt = file_hnd.write(  binascii.a2b_uu(BinTree.binSearchInit(opt, token)))
-file_hnd.close()
 
 # 3. Comprimir el mensaje usando huf
 
-# -- Read file
+huf = build_huffman(D, P)
 
+# -- Read file
+conab = 0
 file_hnd = open('el_quijote_bin.bin', 'wb')
 
 for token in tokens:
+   # print("huff: " + str(conab))
+   # conab += 1
     #txt = file_hnd.write(bytes(bits2a(BinTree.leaf_searh(huf, token)), encoding='utf8'))
-    txt = file_hnd.write(bytes( BinTree.leaf_searh(huf, token), encoding='utf8'))
+    txt = file_hnd.write(
+        bytes(BinTree.leaf_searh(huf, token), encoding='utf8'))
 file_hnd.close()
 
+print("huffman acabo")
+
+# 2. Comprimir el mensaje usando opt
+
+opt = opt_bin_tree(D, P, Q)
+
+file_hnd = open('el_quijote_bin_OPT.bin', 'wb')
+
+cona = 0
+for token in tokens:
+    #print("opt: " + cona)
+    cona += 1
+    #print(bytes(BinTree.binSearchInit(opt, token), encoding='utf8'))
+    txt = file_hnd.write(
+        bytes(BinTree.binSearchInit(opt, token), encoding='utf8'))
+    #txt = file_hnd.write(binascii.a2b_uu(BinTree.binSearchInit(opt, token)))
+file_hnd.close()
+print("opt acabo")
 
 # 4. Comparar la calidad de comprension
+
+#
+# En terminos de la creacion del arbol, huffman es la mejor opcion al tener una complejidad de O(n logn), comparada con O(n^3) del memoizado.
+# 
+# A la hora de buscar un valor en el arbol, como los tokens mas frecuentes se deben revisar primero, el memoizado tiene la ventaja ya que
+#   no tiene que ir hasta las hojas del arbol para encontrarlos. Esto genera que la compresion del memoizado sea mejor en la mayoria de los casos
+# 
+# 
+#
+#
+#
+#
