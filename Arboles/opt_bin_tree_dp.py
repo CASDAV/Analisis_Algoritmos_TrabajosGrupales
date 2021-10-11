@@ -194,7 +194,8 @@ txt = file_hnd.read().replace('\n', ' ')
 file_hnd.close()
 
 # Split delimiters
-delimiters = " ,.!?/&-:;@'...()[]<>¡«–\""
+delimiters = " ,.!?/&-:;@'...()[]<>¡«–¿‘‘“»’’\""
+
 "["+"\\".join(delimiters)+"]"
 tokens = re.split("["+"\\".join(delimiters)+"]", txt)
 
