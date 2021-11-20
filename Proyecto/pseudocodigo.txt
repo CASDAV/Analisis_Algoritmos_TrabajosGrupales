@@ -1,0 +1,6 @@
+while no ganado:
+    por cada posicion en la matriz:
+        sacar posicion de la posicion actual, la posicion del numero actual, posicion del 0
+        mover el 0 hasta la posicion actual
+        hacer circulos hasta mover el numero actual hasta la posicion del numero
+        
