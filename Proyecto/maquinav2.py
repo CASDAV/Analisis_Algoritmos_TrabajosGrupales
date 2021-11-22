@@ -4,7 +4,7 @@ import numpy as np
 import time
 
 
-matriz = t.generarMatriz()
+matriz = t.generarMatriz2(10)
 
 
 gano = False
@@ -194,6 +194,7 @@ def mejorJugada2(m):
 print(puntaje(matriz))
 max2 = 0
 iter = 0
+t.imprimir(matriz)
 while iter < 50000 :
     iter += 1
     if puntaje(matriz) > max2:
@@ -203,25 +204,25 @@ while iter < 50000 :
     print("MAX: " + str(max2) + "ACTUAL " + str( puntaje(matriz)))
     print()
     #print("Gane?: " + str(gano))
-    if(iter % 500 == 0):
-        posz = buscarZero(matriz)
-        xx = random.randrange(0,4,1)
-        yy = random.randrange(0,4,1)
-        ds = distancia(posz,(0,0))
-        matriz = mover(matriz,ds)
-    if(iter % 500 == 250):
-        posz = buscarZero(matriz)
-        xx = random.randrange(0,4,1)
-        yy = random.randrange(0,4,1)
-        ds = distancia(posz,(3,3))
-        matriz = mover(matriz,ds)
+    # if(iter % 500 == 0):
+    #     posz = buscarZero(matriz)
+    #     xx = random.randrange(0,4,1)
+    #     yy = random.randrange(0,4,1)
+    #     ds = distancia(posz,(0,0))
+    #     matriz = mover(matriz,ds)
+    # if(iter % 500 == 250):
+    #     posz = buscarZero(matriz)
+    #     xx = random.randrange(0,4,1)
+    #     yy = random.randrange(0,4,1)
+    #     ds = distancia(posz,(3,3))
+    #     matriz = mover(matriz,ds)
     
-    if(iter % 500 == 400):
-        posz = buscarZero(matriz)
-        xx = random.randrange(0,4,1)
-        yy = random.randrange(0,4,1)
-        ds = distancia(posz,(xx,yy))
-        matriz = mover(matriz,ds)
+    # if(iter % 500 == 400):
+    #     posz = buscarZero(matriz)
+    #     xx = random.randrange(0,4,1)
+    #     yy = random.randrange(0,4,1)
+    #     ds = distancia(posz,(xx,yy))
+    #     matriz = mover(matriz,ds)
 
     #---------
 
@@ -263,7 +264,7 @@ while iter < 50000 :
     
     print(opcion)
     matriz = t.mover(opcion, matriz)
-    #time.sleep(0.02)
+    time.sleep(0.02)
     #t.imprimir(matriz)
     gano = t.verificar(matriz)
     if gano:

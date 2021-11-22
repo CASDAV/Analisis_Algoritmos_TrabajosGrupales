@@ -2,7 +2,7 @@ import tablero as t
 import numpy as np
 
 
-matriz = t.generarMatriz3()
+matriz = t.generarMatriz2(3)
 
 
 gano = False

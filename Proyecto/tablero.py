@@ -16,7 +16,7 @@ def generarMatriz():
     
     return matriz
 
-def generarMatriz2():
+def generarMatriz2(movidas):
     matriz = np.empty((4, 4), dtype=int)
     matriz.fill(0)
 
@@ -28,6 +28,19 @@ def generarMatriz2():
             matriz[i][j] = cont
             cont +=1
     matriz[3][3] = 0
+
+    #desordenar la matriz
+    for i in range(0,movidas):
+        dir = random.randrange(0,4,1)
+        if dir == 0:
+            mover("w",matriz)
+        if dir == 1:
+            mover("a",matriz)
+        if dir == 2:
+            mover("s",matriz)
+        if dir == 3:
+            mover("d",matriz)
+
     return matriz
 
 def generarMatriz3():
