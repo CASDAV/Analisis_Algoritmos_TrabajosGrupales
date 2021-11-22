@@ -30,6 +30,18 @@ def generarMatriz2():
     matriz[3][3] = 0
     return matriz
 
+def generarMatriz3():
+    matriz = np.empty((4, 4), dtype=int)
+    matriz.fill(0)
+
+   
+    
+    matriz[0] = [2,3,4,0]
+    matriz[1] = [1,5,6,7]
+    matriz[2] = [10,11,12,8]
+    matriz[3] = [9,13,14,15]
+    return matriz
+
 
 def imprimir(matriz):
     print(matriz)
@@ -61,7 +73,7 @@ def mover(opcion, m):
     pos = np.where(m == 0)
     x = pos[0][0]
     y = pos[1][0]
-    print(x,y)
+    #print(x,y)
     if opcion == "w":
         #mover arriba
         if x-1 >= 0:
